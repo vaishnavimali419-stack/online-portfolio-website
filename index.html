@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio | Student</title>
+    <title>My Portfolio</title>
 
     <style>
         * {
@@ -29,7 +29,6 @@
             background: #111a2e;
             position: sticky;
             top: 0;
-            z-index: 10;
         }
 
         .logo {
@@ -41,8 +40,7 @@
         nav a {
             color: white;
             text-decoration: none;
-            margin-left: 18px;
-            font-size: 14px;
+            margin-left: 15px;
         }
 
         nav a:hover {
@@ -56,49 +54,50 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 60px 20px;
-            background: radial-gradient(circle at top, #17365c, #0b1120 65%);
+            padding: 50px 20px;
+            background: radial-gradient(circle at top, #17365c, #0b1120 70%);
         }
 
         .profile {
-            width: 115px;
-            height: 115px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             background: #38bdf8;
             color: #0b1120;
             display: flex;
-            align-items: center;
             justify-content: center;
-            font-size: 42px;
+            align-items: center;
+            font-size: 50px;
             font-weight: bold;
-            margin-bottom: 22px;
             border: 4px solid #7dd3fc;
+            margin-bottom: 20px;
         }
 
         .hero h1 {
-            font-size: clamp(32px, 6vw, 54px);
-            margin-bottom: 12px;
+            font-size: clamp(32px, 6vw, 52px);
+            margin: 10px 0;
         }
 
-        .hero h1 span {
+        .hero h1 span,
+        .section-title span {
             color: #38bdf8;
         }
 
         .hero p {
             color: #cbd5e1;
-            max-width: 550px;
-            margin-bottom: 25px;
+            max-width: 600px;
+            margin-bottom: 18px;
         }
 
         .btn {
             display: inline-block;
-            padding: 11px 23px;
-            border-radius: 7px;
+            padding: 10px 22px;
+            margin: 8px;
             background: #38bdf8;
             color: #0b1120;
             text-decoration: none;
+            border-radius: 7px;
             font-weight: bold;
-            margin: 5px;
         }
 
         .btn:hover {
@@ -106,17 +105,13 @@
         }
 
         section {
-            padding: 65px 8%;
+            padding: 60px 8%;
             text-align: center;
         }
 
         .section-title {
             font-size: 30px;
-            margin-bottom: 28px;
-        }
-
-        .section-title span {
-            color: #38bdf8;
+            margin-bottom: 25px;
         }
 
         .about-text {
@@ -127,7 +122,7 @@
 
         .cards {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
             gap: 20px;
             max-width: 1000px;
             margin: auto;
@@ -138,7 +133,7 @@
             border: 1px solid #263751;
             border-radius: 12px;
             padding: 25px;
-            transition: transform 0.2s, border-color 0.2s;
+            transition: 0.3s;
         }
 
         .card:hover {
@@ -156,7 +151,7 @@
         }
 
         .contact p {
-            margin: 10px 0;
+            margin: 12px;
             color: #cbd5e1;
         }
 
@@ -166,22 +161,21 @@
         }
 
         footer {
-            text-align: center;
-            padding: 22px;
             background: #111a2e;
             color: #94a3b8;
-            font-size: 14px;
+            text-align: center;
+            padding: 20px;
         }
 
         @media (max-width: 600px) {
             nav {
                 flex-direction: column;
                 gap: 12px;
-                padding: 15px;
             }
 
             nav a {
-                margin: 0 6px;
+                margin: 5px;
+                font-size: 13px;
             }
 
             section {
@@ -194,7 +188,7 @@
 <body>
 
     <nav>
-        <div class="logo">MyPortfolio.</div>
+        <div class="logo">V Portfolio.</div>
         <div>
             <a href="#home">Home</a>
             <a href="#about">About</a>
@@ -206,84 +200,99 @@
 
     <header class="hero" id="home">
         <div class="profile">V</div>
-        <p>HELLO, WELCOME TO MY PORTFOLIO</p>
-        <h1>I'm <span>Vaishnavi Mali</span></h1>
+
+        <p>WELCOME TO MY PERSONAL PORTFOLIO</p>
+
+        <h1>Hello, I'm <span>Vaishnavi Mali</span></h1>
+
         <p>
-            A passionate student exploring web development,
-            programming and new technologies.
+            I am a student passionate about technology,
+            web development and creative ideas.
+            Welcome to my personal portfolio website!
         </p>
+
         <div>
-            <a class="btn" href="#projects">View My Projects</a>
+            <a class="btn" href="#projects">View Projects</a>
             <a class="btn" href="#contact">Contact Me</a>
         </div>
     </header>
 
     <section id="about">
         <h2 class="section-title">About <span>Me</span></h2>
+
         <p class="about-text">
-            Hello! I am a college student interested in technology
-            and web development. I enjoy learning new skills and
-            creating useful projects. My goal is to become a skilled
-            developer and build creative digital experiences.
+            Hello! I am a college student interested in
+            technology and programming. I enjoy learning
+            new skills and creating useful websites.
+            My goal is to become a successful developer.
         </p>
     </section>
 
     <section id="skills">
         <h2 class="section-title">My <span>Skills</span></h2>
+
         <div class="cards">
             <div class="card">
                 <h3>HTML</h3>
-                <p>Creating the structure of web pages.</p>
+                <p>Building the structure of web pages.</p>
             </div>
+
             <div class="card">
                 <h3>CSS</h3>
-                <p>Designing beautiful and responsive websites.</p>
+                <p>Creating attractive website designs.</p>
             </div>
+
             <div class="card">
                 <h3>JavaScript</h3>
-                <p>Adding interaction to web pages.</p>
+                <p>Making websites interactive.</p>
             </div>
+
             <div class="card">
-                <h3>Git & GitHub</h3>
-                <p>Managing code and collaborating on projects.</p>
+                <h3>GitHub</h3>
+                <p>Managing code and publishing projects.</p>
             </div>
         </div>
     </section>
 
     <section id="projects">
         <h2 class="section-title">My <span>Projects</span></h2>
+
         <div class="cards">
             <div class="card">
                 <h3>Student Management</h3>
-                <p>A basic project to organize student details.</p>
+                <p>A simple project to organize student details.</p>
             </div>
+
             <div class="card">
                 <h3>Library Management</h3>
-                <p>A project to maintain a list of library books.</p>
+                <p>A project for maintaining library book records.</p>
             </div>
+
             <div class="card">
                 <h3>Personal Portfolio</h3>
-                <p>A website showcasing my skills and projects.</p>
+                <p>A website to showcase my skills and projects.</p>
             </div>
         </div>
     </section>
 
     <section id="contact" class="contact">
         <h2 class="section-title">Contact <span>Me</span></h2>
+
         <p>Email:
             <a href="mailto:your-email@example.com">
                 vaishnavimali419@gmail.com
             </a>
         </p>
+
         <p>GitHub:
             <a href="https://github.com/" target="_blank"
-               rel="noopener noreferrer">Visit GitHub</a>
+               rel="noopener noreferrer">Visit My GitHub</a>
         </p>
     </section>
 
     <footer>
-        <p>© 2026 Your Name | Personal Portfolio</p>
-        <p>Designed with ❤️ using HTML & CSS</p>
+        <p>© 2026 V Portfolio | Designed with HTML & CSS</p>
+        <p>Made with ❤️</p>
     </footer>
 
 </body>
